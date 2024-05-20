@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box; /* Menggunakan border-box untuk menghitung total lebar dan tinggi termasuk padding dan border */
+    list-style: none;
+}
+
+body {
+    background-color: #222222;
+    font-family: 'Roboto', sans-serif; /* Memperbaiki penulisan font family */
+}
+
+.container {
+    margin: 20vh auto; /* Memberikan margin atas dan bawah 20vh, dan otomatis di tengah */
+    max-width: 800px; /* Membatasi lebar maksimum container */
+    padding: 0 20px; /* Memberikan padding kiri dan kanan 20px */
+}
+
+.top-container {
+    display: flex;
+    align-items: center; /* Mengatur penyejajaran vertikal */
+    justify-content: center; /* Mengatur penyejajaran horizontal */
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Mengatur penyejajaran vertikal */
+    margin-right: 80px;
+}
+
+.left img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profilebutton {
+    background-color: #F26240;
+    border: none;
+    color: white;
+    padding: 15px 30px; /* Memperbesar padding */
+    margin: 0 20px; /* Mengurangi jarak di sekitar tombol */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.profilebutton:hover {
+    background-color: #D85437;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    justify-content: center; /* Mengatur penyejajaran konten vertikal */
+}
+
+h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.textbox {
+    margin-bottom: 15px;
+}
+
+.textbox label {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%; /* Mengisi lebar input sesuai container */
+    padding: 10px; /* Mengurangi padding kiri dan kanan */
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Menambahkan garis tepi */
+    box-sizing: border-box; /* Menggunakan border-box untuk menghitung total lebar termasuk padding dan border */
+    font-size: 16px;
+}
+
+.bottom-container {
+    position: fixed; /* Menggunakan posisi tetap */
+    bottom: 40px; /* Jarak dari bawah layar */
+    left: 66%; /* Pusatkan elemen ke tengah horizontal */
+    transform: translateX(-50%); /* Geser elemen ke kiri sebesar 50% dari lebarnya */
+    display: flex;
+    justify-content: flex-end; /* Mengatur penyejajaran ke kanan */
+}
+
+.savebutton{
+    background-color: #F26240; /* Warna latar belakang */
+    border: none; /* Tanpa batas */
+    color: white; /* Warna teks */
+    padding: 15px 40px; /* Padding di dalam tombol */
+    margin: 0 20px; /* Jarak di sekitar tombol */
+    text-align: center; /* Penyejajaran teks */
+    text-decoration: none; /* Tanpa dekorasi teks */
+    display: inline-block; /* Tampilan inline */
+    font-size: 16px; /* Ukuran font */
+    cursor: pointer; /* Kursor saat dihover */
+    border-radius: 10px; /* Sudut membulat */
+    text-transform: uppercase; /* Huruf kapital */
+    font-weight: bold; /* Teks tebal */
+}
+.cancelbutton {
+    background-color: #F26240; /* Warna latar belakang */
+    border: none; /* Tanpa batas */
+    color: white; /* Warna teks */
+    padding: 15px 30px; /* Padding di dalam tombol */
+    margin: 0 20px; /* Jarak di sekitar tombol */
+    text-align: center; /* Penyejajaran teks */
+    text-decoration: none; /* Tanpa dekorasi teks */
+    display: inline-block; /* Tampilan inline */
+    font-size: 16px; /* Ukuran font */
+    cursor: pointer; /* Kursor saat dihover */
+    border-radius: 10px; /* Sudut membulat */
+    text-transform: uppercase; /* Huruf kapital */
+    font-weight: bold; /* Teks tebal */
+}
+
+.savebutton:hover,
+.cancelbutton:hover {
+    background-color: #45a049; /* Warna latar belakang saat dihover */
+}
+
+.cancelbutton {
+    background-color: #F26240; /* Warna latar belakang khusus untuk cancelbutton */
+}
